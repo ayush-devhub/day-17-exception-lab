@@ -9,7 +9,7 @@ import java.util.Map;
 public class BankService {
     private final Map<Integer, Account> accounts = new HashMap<>();
 
-    public BankService(int id, double balance) {
+    public void createAccount(int id, double balance) {
         accounts.put(id, new Account(id, balance));
     }
 
